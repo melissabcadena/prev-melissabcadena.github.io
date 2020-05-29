@@ -15,6 +15,8 @@ body {
     background-color: var(--navy-color);
 }
 
+/* Header Styles Start*/
+
 header {
     background-image: url(../images/hero.jpg);
     background-size: cover;
@@ -79,19 +81,25 @@ header nav {
    margin-left: auto;
 }
 
-#about-me h2 {
+/* Header Styles end */
+
+/* About Me Styles Start*/
+
+.section-title {
     margin: 85px 10px;
     padding: 40px;
     text-align: center;
     width: 40%;
     height: 40%;
+    border-right: 3px solid white;
+    flex: 1;
 }
 
 #about-me p {
     color: var(--mustard-color);
     margin: 10px;
     padding: 10px;
-    border-left: 3px solid white;
+    flex: 3
 }
 
 .profile-photo {
@@ -99,3 +107,58 @@ header nav {
     width: 300px;
     margin: 0 0 10px 35px;
 }
+
+/* About Me Styles End */
+
+/* My Work Styles Begin */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr repeat(2, 1fr);
+    grid-template-rows: 2fr repeat(2, 1fr);
+    gap: 20px 20px;
+    grid-template-areas: ". . ." ". . ." ". . .";
+    margin: 10px;
+    padding: 10px;
+    flex: 3;
+  }
+
+  .grid-item {
+      padding: 15px; 
+      border: 2px solid var(--mustard-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-color: white;
+  }
+
+  #my-work h2 {
+      height: 40%;
+      width: 10%; 
+
+  }
+
+  /* contact info styles begin */
+
+  .contact-me ul {
+      list-style: none;
+      justify-content: space-around;
+      align-items: center;
+      flex: 3;
+  }
+
+  .contact-me ul li a{
+    padding: 10px 15px;
+    margin: 10px;
+    font-size: 1.55vw;
+    color: var(--mustard-color);
+    background-color: white;
+    border-radius: 15px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .contact-me ul li a:hover {
+    color: var(--coral-color);
+  }
