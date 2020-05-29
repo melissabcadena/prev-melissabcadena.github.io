@@ -1,0 +1,80 @@
+:root {
+    --coral-color: #ff6f61;
+    --navy-color: #022f45;
+    --mustard-color: #d8ad39;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Courier New", Courier, monospace;
+    color: var(--coral-color);
+    background-color: var(--navy-color);
+}
+
+header {
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    background-attachment: fixed;
+    background-position: 80%;
+    height: 400px;
+}
+
+header h1 {
+    background-color: var(--navy-color);
+    border-radius: 15px;
+    font-size: 36px;
+    height: fit-content;
+    padding: 10px 15px;
+    margin: 10px;
+    text-align: center;
+}
+
+header nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 17px 15px;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    margin: 10px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-decoration: none;
+    color: var(--mustard-color);
+    background-color: var(--navy-color);
+    border-radius: 15px;
+}
+
+header nav ul li a:hover {
+    font-weight: bold;
+    color: var(--coral-color);
+}
+
+header h2 {
+    align-self: flex-end;
+    background-color: #022f45;
+    border-radius: 15px;
+    padding: 10px 15px;
+    margin: 10px 10px 10px auto;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.flex-container {
+    display: flex;
+    width: 100%;
+}
+
+header nav {
+   margin-left: auto;
+}
+
