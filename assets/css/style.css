@@ -31,6 +31,7 @@ header {
     background-attachment: fixed;
     background-position: 80%;
     height: auto;
+    z-index: 9999;
 }
 
 header h1 {
@@ -124,6 +125,23 @@ header h2 {
     text-decoration: none;
     color: white;
     border-radius: 15px;
+    position: relative;
+}
+
+.grid-item::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(199, 181, 67, 0.7), rgba(199, 181, 67, 0));
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .5s;
+}
+
+.grid-item:hover::after {
+    opacity: 1;
 }
 
 .my-work {
@@ -235,3 +253,7 @@ header h2 {
     header nav ul li a, .contact-me ul li a, .about-me p {
         font-size: 2vw;
 }
+
+    .grid-item::after {
+        display: none;
+    }
