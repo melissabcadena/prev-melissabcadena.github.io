@@ -228,24 +228,40 @@ header h2 {
         padding: 15px;
     }
 
-    .my-work h2 {
-        padding: 15px 0 0 0;
+    .about-me p {
+        text-align: center;
+        font-size: 3vw;
     }
 
     .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, 1fr);
         width: 100%;
         margin: auto;
     }
 
-    .about-me p {
-        text-align: center;
-        font-size: 1.7vw;
+    .grid-item {
+        padding: 50px;
+    }
+
+    .item-1 {
+        background-image: url(../images/item-1.png);
+        grid-column: 1/ 1;
+        grid-row: 1/ 1;
     }
 
     .contact-me ul {
         flex-direction: unset;
         padding-top: 50px;
         }
+
+    .my-work {
+        height: fit-content
+    }
+    
+    .my-work h2 {
+        padding: 15px 0 0 0;
+    }
 }
 
 @media screen and (max-width: 768px) {
