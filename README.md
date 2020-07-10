@@ -4,8 +4,8 @@
 A website that was created to introduce Melissa and showcase her skills and capabilites to possible new employers and clients. 
 
 ## Built With
-HTML
-CSS
+- HTML
+- CSS
 
 ## Website
 https://melissabcadena.github.io/.
