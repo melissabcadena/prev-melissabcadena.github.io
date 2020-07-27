@@ -101,7 +101,8 @@ header h2 {
     margin: 10px;
     padding: 10px;
     flex: 3;
-    font-size: 1.2vw;
+    font-size: 1.3vw;
+    text-align: center;
 }
 
 /* About Me Styles End */
